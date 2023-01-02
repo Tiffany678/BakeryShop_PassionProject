@@ -61,7 +61,8 @@ export default function Buttons(props) {
     // window.alert(itemCount);
     return (
         <div className="basket_buttons">
-          {countItem.count < itemTotal.limit ? (
+          {/*{countItem.count < itemTotal.limit ? (*/}
+            {countItem.count < 5 ? (
               <span
                   onClick={() => dispath({type: "INCREASE", payload: id})}
                   className="basket_plus"
