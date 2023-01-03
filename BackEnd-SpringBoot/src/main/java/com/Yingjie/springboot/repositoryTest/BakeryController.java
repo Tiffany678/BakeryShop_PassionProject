@@ -1,4 +1,4 @@
-package com.Yingjie.springboot.controller;
+package com.Yingjie.springboot.repositoryTest;
 
 import com.Yingjie.springboot.model.Bakery;
 import com.Yingjie.springboot.repository.BakeryRepository;
@@ -27,6 +27,7 @@ public class BakeryController {
 
 	@GetMapping("/bakery/{id}")
 	public Bakery getCakeById(@PathVariable(value = "id") long id) {
+
 		return bakeryRepository.findById(id).get();
 	}
 
