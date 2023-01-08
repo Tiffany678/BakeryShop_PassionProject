@@ -1,4 +1,3 @@
-import {useEffect} from "react";
 
 let allProducts = [{
     id: 1,
@@ -8,7 +7,7 @@ let allProducts = [{
     count: 1,
     isInterest: false,
     category: 'Fruits',
-    limit: 100
+    limit: 9
 },
     {
         id: 2,
@@ -18,7 +17,7 @@ let allProducts = [{
         count: 1,
         isInterest: false,
         category: 'Cheese',
-        limit: 100
+        limit: 9
     },
     {
         id: 3,
@@ -28,7 +27,7 @@ let allProducts = [{
         count: 1,
         isInterest: false,
         category: 'Chocolate',
-        limit: 100
+        limit: 9
     },
     {
         id: 4,
@@ -38,7 +37,7 @@ let allProducts = [{
         count: 1,
         isInterest: false,
         category: 'GreenTea',
-        limit: 100
+        limit: 9
     },
     {
         id: 5,
@@ -48,7 +47,7 @@ let allProducts = [{
         count: 1,
         isInterest: false,
         category: 'Strawberry',
-        limit: 100
+         limit: 9
     },
     {
         id: 6,
@@ -58,7 +57,7 @@ let allProducts = [{
         count: 1,
         isInterest: false,
         category: 'Chocolate',
-        limit: 100
+        limit: 9
     },
     {
         id: 7,
@@ -68,7 +67,7 @@ let allProducts = [{
         count: 1,
         isInterest: false,
         category: 'Cheese',
-        limit: 100
+        limit: 9
     },
     {
         id: 8,
@@ -78,7 +77,7 @@ let allProducts = [{
         count: 1,
         isInterest: false,
         category: 'Strawberry',
-        limit: 100
+        limit: 9
     },
     {
         id: 9,
@@ -88,7 +87,7 @@ let allProducts = [{
         count: 1,
         isInterest: false,
         category: 'Chocolate',
-        limit: 100
+        limit: 9
     },
     {
         id: 10,
@@ -98,7 +97,7 @@ let allProducts = [{
         count: 1,
         isInterest: false,
         category: 'Strawberry',
-        limit: 100
+         limit: 9
     }]
 
 export default allProducts

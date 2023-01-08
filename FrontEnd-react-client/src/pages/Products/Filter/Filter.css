@@ -22,13 +22,13 @@
 }
 
 .filter_btnBox::-webkit-scrollbar-thumb {
-    background-color: #8fc700b6;
+    background-color: #ff8000;
     border-radius: 3px;
 }
 
 .filter_icon {
     width: 80px;
-    color: #8fc700;
+    color: #fca985;
     padding: 0;
 }
 
@@ -37,7 +37,7 @@
     line-height: 35px;
     display: block;
     border-radius: 25px;
-    background-color: #8fc700;
+    background-color: #fca985;
     border: none;
     outline: none;
     color: #fff;
@@ -48,5 +48,5 @@
 }
 
 .filter_btn:hover {
-    background-color: #7fb002;
+    background-color: #ff8000;
 }

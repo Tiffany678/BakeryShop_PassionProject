@@ -4,7 +4,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    background-color: #8fc700;
+    background-color: #fca985;
     border-radius: 10px 10px 0 0;
     padding: 30px 20px;
     margin-top: 50px;
@@ -62,7 +62,7 @@
 
 .btn_link_to_game:hover {
     outline-offset: 0px;
-    color: #8fc700;
+    color: #fca985;
 }
 
 .footer_last {
@@ -111,7 +111,7 @@
     font-size: 20px;
     align-items: center;
     justify-content: center;
-    color: #8fc700;
+    color: #fca985;
     background-color: #eee;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 20px;

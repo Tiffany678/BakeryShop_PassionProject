@@ -5,6 +5,7 @@ import { ProductContext, ProductDispath } from "../Context/ContextProvider";
 import "./Buttons.css";
 
 
+
 import BakeryDataService from "../../services/bakery.service";
 
 export default function Buttons(props) {
@@ -61,16 +62,17 @@ export default function Buttons(props) {
     // window.alert(itemCount);
     return (
         <div className="basket_buttons">
-          {/*{countItem.count < itemTotal.limit ? (*/}
-            {countItem.count < 5 ? (
-              <span
-                  onClick={() => dispath({type: "INCREASE", payload: id})}
-                  className="basket_plus"
-              >
+
+            {countItem.count <props.limit ? (
+                <span
+                    onClick={() => dispath({type: "INCREASE", payload: id})}
+                    className="basket_plus"
+                >
           <AiOutlinePlus/>
         </span>
-          ) : null
-          }
+            ) :
+                null
+            }
 
           <span className="counter_number">{props.count}</span>
           {countItem.count === 1 ? (

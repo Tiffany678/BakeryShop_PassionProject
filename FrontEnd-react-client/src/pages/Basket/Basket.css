@@ -23,7 +23,8 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 20px;
-  border-right: 5px solid #8fc700;
+  /* border-right: 5px solid #8fc700; */
+  border-right: 5px solid #fca985;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,7 +124,7 @@
 
 .basket_send span:last-child {
   font-size: 25px;
-  color: #8fc700;
+  color: #fca985;
 }
 
 .basket_button_buy,
@@ -146,7 +147,7 @@
 }
 
 .basket_button_buy {
-  background-color: #8fc700;
+  background-color: #fca985;
   margin-top: 35px;
 }
 
@@ -178,7 +179,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #8fc700;
+  border: 2px solid #fca985;
   border-radius: 5px;
 }
 
@@ -200,7 +201,7 @@
   height: 40px;
   border: none;
   outline: none;
-  background-color: #8fc700;
+  background-color: #fca985;
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -236,7 +237,7 @@
 }
 
 .offer_true {
-  color: #8fc700;
+  color: #fca985;
 }
 
 .thankyou_true {

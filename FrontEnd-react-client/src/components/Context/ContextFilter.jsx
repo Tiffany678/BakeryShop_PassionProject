@@ -28,7 +28,8 @@ const filterReduce = (state, action) => {
       };
     case "CHEESE":
       return {
-        ...filterItemsHandler("CHEESE")
+         ...filterItemsHandler("CHEESE")
+
       };
     case "CHOCOLATE":
       return {

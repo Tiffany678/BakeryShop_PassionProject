@@ -75,7 +75,7 @@
 }
 
 .buy_button {
-  background-color: #8fc700;
+  background-color: #fca985;
 }
 
 .add_button {
@@ -83,7 +83,8 @@
 }
 
 .buy_button:hover {
-  background-color: #7fb002;
+  /*background-color: #7fb002;*/
+  background-color: #ff8000;
 }
 
 .add_button:hover {
