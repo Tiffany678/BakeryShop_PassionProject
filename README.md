@@ -1,6 +1,6 @@
 # Welcome to my passion project, A Sweet Bakery Web application
 This web app is user-friendly that it is simple and easy to navigate. 
-The following are user features:
+The following are user features:    <br />
     > Search for cakes              <br />
     > Add to favorite               <br />
     > View Cake details             <br />
@@ -8,7 +8,9 @@ The following are user features:
 
 
 #Demo
-Home page: 
+Home page:
+<img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/HomePage.png" alt="Home Page" width="650"/>
+
 
 <img height="500" src="/Users/yingjieyang/Desktop/PassionProject/BakeryShop_PassionProject/Images/HomePage.png" width="650"/>
 

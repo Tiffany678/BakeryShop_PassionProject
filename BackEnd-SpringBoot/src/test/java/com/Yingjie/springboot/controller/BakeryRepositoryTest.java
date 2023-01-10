@@ -1,5 +1,5 @@
 
-package com.Yingjie.springboot.repositoryTest;
+package com.Yingjie.springboot.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.BDDMockito.given;

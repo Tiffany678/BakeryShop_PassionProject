@@ -28,7 +28,7 @@ public class Bakery {
 
 	}
 
-	public Bakery( String title, double price, int count, boolean inInterest, String category, String information) {
+	public Bakery(String title, double price, int count, boolean inInterest, String category, String information) {
 		this.title = title;
 		this.price = price;
 		this.count = count;

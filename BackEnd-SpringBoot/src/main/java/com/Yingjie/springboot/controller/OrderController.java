@@ -1,4 +1,4 @@
-package com.Yingjie.springboot.repositoryTest;
+package com.Yingjie.springboot.controller;
 
 import com.Yingjie.springboot.model.Order;
 import com.Yingjie.springboot.repository.OrderRepository;

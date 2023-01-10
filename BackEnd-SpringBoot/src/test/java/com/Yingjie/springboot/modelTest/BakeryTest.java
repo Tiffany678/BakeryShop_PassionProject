@@ -1,6 +1,6 @@
 package com.Yingjie.springboot.modelTest;
 
-import com.Yingjie.springboot.repositoryTest.BakeryController;
+import com.Yingjie.springboot.controller.BakeryController;
 import com.Yingjie.springboot.model.Bakery;
 import com.Yingjie.springboot.repository.BakeryRepository;
 import org.junit.Assert;

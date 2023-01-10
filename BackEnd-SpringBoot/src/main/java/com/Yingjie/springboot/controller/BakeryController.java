@@ -1,4 +1,4 @@
-package com.Yingjie.springboot.repositoryTest;
+package com.Yingjie.springboot.controller;
 
 import com.Yingjie.springboot.model.Bakery;
 import com.Yingjie.springboot.repository.BakeryRepository;
@@ -52,11 +52,18 @@ public class BakeryController {
 		else return false;
 	}
 
-	@PostMapping("/buyCake/{id}")
+	@PostMapping("/cakes/{id}")
 	public void buyCake(@PathVariable(value = "id") Long id, @RequestBody int count) {
 		Bakery b = bakeryRepository.findById(id).get();
 		if (b.getCount()>=count)
 			b.setCount(b.getCount()-count);
+	}
+
+//	Added Here
+	@GetMapping("/cake/{id}")
+	public int getCakeCount(@PathVariable(value = "id") Long id) {
+		Bakery b = bakeryRepository.findById(id).get();
+		return b.getCount();
 	}
 
 
