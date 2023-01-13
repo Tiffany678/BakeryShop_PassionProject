@@ -72,12 +72,11 @@ It sets up your development environment so that you can use the latest JavaScrip
 ```
 npx create-react-app FrontEnd-react-client
 cd FrontEnd-react-client
-npm start
 ```
 
 When you’re ready to deploy to production, running
 ```
-npm run 
+npm start
 ```
 
 ## Components and Models
@@ -89,7 +88,7 @@ Check-out page:
 
 <img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/CheckOutPage.png" alt="Check out Page" width="650"/>
 
-# Orders
+### Orders
 After users successfully purchase their cakes, it will update our inventory and send order information to the backend database.
 All the cakes are having 6 counts in inventory.
 
@@ -107,6 +106,6 @@ The order information is stored in the database.
 ## Conclusion
 In this article, we created a simple e-commerce application. We created an API on the backend using Spring Boot and then we consumed it in our frontend application made in React. We demonstrated how to make the components we need, make them communicate with each other and retrieve/send data from/to the API.
 
-Finally, we showed how to merge both applications into one, packaged web app inside the static folder.
+
 
 
