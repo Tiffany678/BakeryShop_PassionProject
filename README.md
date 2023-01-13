@@ -10,7 +10,7 @@ Basically, the user will be able to add/remove products from a shopping cart/ fa
 To develop the API, I use the latest version of Spring Boot. I also use JPA and Mysql for the persistence side of things.
 
 
-## Maven Dependencies
+### Maven Dependencies
 
 Below are the required Dependencies for the pom.xml
 
@@ -47,10 +47,10 @@ And finally - the Jackson library:
 </dependency>
 ```
 
-We can also use Spring Initializr to quickly set up the project with needed dependencies.
+We can also use [Spring Initializr](https://start.spring.io/) to quickly set up the project with needed dependencies.
 
 ## Setting Up the MySQL Database
-We will use Mysql localhost database with Spring Boot. This is the property setting on the src/main/resources/application.properties.
+We will use Mysql localhost database with Spring Boot. This is the property setting on the _src/main/resources/application.properties_.
 
 ```
 server.port=8080
@@ -64,9 +64,9 @@ spring.jpa.hibernate.ddl-auto= update
 ```
 
 ## Frontend
-Now that we have our Spring Boot application built up, it's time to move the React part of the project. To do so, we'll first have to install Node.js with NPM.
+Now that we have our Spring Boot application built up, it's time to move the React part of the project. To do so, we'll first have to install [Node.js](https://nodejs.org/en/download/) with NPM.
 
-# Setting Up the React Project
+### Setting Up the React Project
 It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production.
 
 ```
