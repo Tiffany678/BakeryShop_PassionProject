@@ -1,3 +1,56 @@
+
+# Overview of My Bakery Web Application
+
+
+In this tutorial, I'll implement a simple e-commerce application. I'll develop an API using Spring Boot and a client application that will consume the API using React.
+
+Basically, the user will be able to add/remove products from a shopping cart/ favorite page, increasing/ decreasing item counts and to place an order.
+
+## Backend Part
+
+To develop the API, I use the latest version of Spring Boot. I also use JPA and Mysql for the persistence side of things.
+
+
+## Maven Dependencies
+
+Below are the required Dependencies for the pom.xml
+
+These are the Spring Boot dependencies:
+```
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+```
+
+Then, the Mysql database:
+
+```
+<dependency>
+  <groupId>mysql</groupId>
+  <artifactId>mysql-connector-java</artifactId>
+  <scope>runtime</scope>
+</dependency>
+```
+
+And finallly - the Jackson library:
+
+```
+<dependency>
+    <groupId>com.fasterxml.jackson.datatype</groupId>
+    <artifactId>jackson-datatype-jsr310</artifactId>
+    <version>2.9.6</version>
+</dependency>
+```
+We've used Spring Initializr to quickly set up the project with needed dependencies.
+
+
+
 # Welcome to my passion project, A Sweet Bakery Web application
 This web app is user-friendly that it is simple and easy to navigate. 
 The following are user features:    <br />
