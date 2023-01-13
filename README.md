@@ -1,4 +1,3 @@
-
 # Overview of My Bakery Web Application
 
 
@@ -38,7 +37,7 @@ Then, the Mysql database:
 </dependency>
 ```
 
-And finallly - the Jackson library:
+And finally - the Jackson library:
 
 ```
 <dependency>
@@ -47,21 +46,42 @@ And finallly - the Jackson library:
     <version>2.9.6</version>
 </dependency>
 ```
-We've used Spring Initializr to quickly set up the project with needed dependencies.
 
+We can also use Spring Initializr to quickly set up the project with needed dependencies.
 
+## Setting Up the MySQL Database
+We will use Mysql localhost database with Spring Boot. This is the property setting on the src/main/resources/application.properties.
 
-# Welcome to my passion project, A Sweet Bakery Web application
-This web app is user-friendly that it is simple and easy to navigate. 
-The following are user features:    <br />
-    > Search for cakes              <br />
-    > Add to favorite               <br />
-    > View Cake details             <br />
-    > Check-out                     <br />
+```
+server.port=8080
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.show-sql=true
+spring.datasource.url= jdbc:mysql://localhost:3306/zipcode?useSSL=false
+spring.datasource.username= YourUserName
+spring.datasource.password= YourPassword
+spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.hibernate.ddl-auto= update
+```
 
+## Frontend
+Now that we have our Spring Boot application built up, it's time to move the React part of the project. To do so, we'll first have to install Node.js with NPM.
 
-#Demo
-Home page:
+# Setting Up the React Project
+It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production.
+
+```
+npx create-react-app FrontEnd-react-client
+cd FrontEnd-react-client
+npm start
+```
+
+When you’re ready to deploy to production, running
+```
+npm run 
+```
+
+## Components and Models
+Before we start creating the components for our application, let's first check out how our app will actually look like:
 
 <img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/HomePage.png" alt="Home Page" width="650"/>
 
@@ -69,8 +89,7 @@ Check-out page:
 
 <img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/CheckOutPage.png" alt="Check out Page" width="650"/>
 
-# Business Layer
-
+# Orders
 After users successfully purchase their cakes, it will update our inventory and send order information to the backend database.
 All the cakes are having 6 counts in inventory.
 
@@ -84,3 +103,10 @@ The count of #3 cake was update to 3 from 6;
 The order information is stored in the database.
 
 <img height="100" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/MySQL_Orders.png" alt="SQL Orders" width="650"/>
+
+## Conclusion
+In this article, we created a simple e-commerce application. We created an API on the backend using Spring Boot and then we consumed it in our frontend application made in React. We demonstrated how to make the components we need, make them communicate with each other and retrieve/send data from/to the API.
+
+Finally, we showed how to merge both applications into one, packaged web app inside the static folder.
+
+
