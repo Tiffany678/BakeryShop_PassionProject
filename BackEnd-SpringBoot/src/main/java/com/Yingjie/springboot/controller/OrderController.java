@@ -16,23 +16,23 @@ public class OrderController {
     @Autowired
     OrderRepository orderRepository;
     @Autowired
-    BakeryController bakeryController;
+    CakeController cakeController;
 
-    public BakeryController getBakeryController() {return bakeryController;}
+    public CakeController getBakeryController() {return cakeController;}
     @GetMapping("/orders")
     public List<Order> getAllOrders() {
         return orderRepository.findAll();
     }
-    @PostMapping("/order")
-    public ResponseEntity<Order> submitOrder(@RequestBody Order myorder) {
-        try {
-            Order _order = orderRepository
-                    .save(new Order(myorder.getDescription(), myorder.getShipping(), myorder.getSubtotal(), myorder.getTotal()));
-            bakeryController.processOrder(myorder.getDescription());
-            System.out.println("order received");
-            return new ResponseEntity<>(_order, HttpStatus.CREATED);
-        } catch (Exception e) {
-            return new ResponseEntity<>(null, HttpStatus.EXPECTATION_FAILED);
-        }
-    }
+//    @PostMapping("/order")
+//    public ResponseEntity<Order> submitOrder(@RequestBody Order myorder) {
+//        try {
+//            Order _order = orderRepository
+//                    .save(new Order(myorder.getDescription(), myorder.getShipping(), myorder.getSubtotal(), myorder.getTotal()));
+//            bakeryController.processOrder(myorder.getDescription());
+//            System.out.println("order received");
+//            return new ResponseEntity<>(_order, HttpStatus.CREATED);
+//        } catch (Exception e) {
+//            return new ResponseEntity<>(null, HttpStatus.EXPECTATION_FAILED);
+//        }
+//    }
 }
