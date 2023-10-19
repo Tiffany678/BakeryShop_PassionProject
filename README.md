@@ -63,7 +63,7 @@ spring.h2.console.path=/h2-console
 
 ## Postman testing for API endpoint
 
-Test the get request:
+Test the get request with Postman:
 
 <img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/PostmanGet.png" alt="Get request" width="650"/>
 
@@ -79,7 +79,7 @@ Test the Post requst:
 
 
 ## Conclusion
-In this article, we created a simple e-commerce application. We created an API on the backend using Spring Boot and then we consumed it in our frontend application made in React. We demonstrated how to make the components we need, make them communicate with each other and retrieve/send data from/to the API.
+In this article, I created a simple e-commerce application. I created an API on the backend using Spring Boot and then consumed it in the frontend application made in React. It demonstrates how to make the components, make them communicate with each other and retrieve/send data from/to the API.
 
 
 
