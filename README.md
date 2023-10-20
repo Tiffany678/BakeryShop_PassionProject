@@ -7,7 +7,7 @@ Basically, the user will be able to add/remove products from a shopping cart/ fa
 
 ## Backend Part
 
-To develop the API, I use the latest version of Spring Boot. I also use JPA and Mysql for the persistence side of things.
+To develop the API, I use the latest version of Spring Boot. I also use JPA and the in memory database, H2 for the persistence side of things.
 
 
 ### Maven Dependencies
@@ -48,8 +48,8 @@ And finally - the Jackson library:
 
 We can also use [Spring Initializr](https://start.spring.io/) to quickly set up the project with needed dependencies.
 
-## Setting Up the MySQL Database
-We will use Mysql localhost database with Spring Boot. This is the property setting on the _src/main/resources/application.properties_.
+## Setting Up the H2 Database
+We will use the H2 localhost database with Spring Boot. This is the property setting on the _src/main/resources/application.properties_.
 
 ```
 spring.datasource.driver-class-name=org.h2.Driver
@@ -61,17 +61,17 @@ spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
 ```
 
-## Postman testing for API endpoint
+## API endpoint testing by Postman
 
-Test the get request with Postman:
+Test the get all request:
 
 <img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/PostmanGet.png" alt="Get request" width="650"/>
 
-Test the get by id requst:
+Test the get item by id request:
 
 <img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/PostmanGetById.png" alt="Get request" width="650"/>
 
-Test the Post requst:
+Test the Post request:
 
 <img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/PostmanPostMethod.png" alt="Get request" width="650"/>
 
@@ -79,8 +79,7 @@ Test the Post requst:
 
 
 ## Conclusion
-In this article, I created a simple e-commerce application. I created an API on the backend using Spring Boot and then consumed it in the frontend application made in React. It demonstrates how to make the components, make them communicate with each other and retrieve/send data from/to the API.
-
+In this article, I created a simple e-commerce application in the business tier and the backend database. The steps above demonstrates how to set up the configuration, make our data variable for displaying to the frontend.
 
 
 
