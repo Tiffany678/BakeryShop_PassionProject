@@ -1,7 +1,7 @@
 # Overview of My Bakery Web Application
 
 
-In this tutorial, We will build a simple web application with Spring Boot . In this tutorial, we'll use Spring Boot for implementing a RESTful backend and test REST endpoint with RestTemplate.
+In this tutorial, We will build a simple web application with Spring Boot. In this tutorial, we'll use Spring Boot for implementing a RESTful backend and test REST endpoint with RestTemplate.
 
 ## The Spring Boot Application
 
@@ -13,7 +13,6 @@ Below are the required Dependencies for the pom.xml
 
 These are the Spring Boot dependencies:
 ```
-
 <dependency>
   <groupId>org.springframework.boot</groupId>
   <artifactId>spring-boot-starter-web</artifactId>
@@ -29,17 +28,19 @@ These are the Spring Boot dependencies:
 	<artifactId>h2</artifactId>
 </dependency>
 ```
-
-And finally - the RestTemplate:
-
+And finally - the Junit and RestTemplate:
 ```
+<dependency>
+	<groupId>org.junit.platform</groupId>
+	<artifactId>junit-platform-launcher</artifactId>
+	<scope>test</scope>
+</dependency>
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-test</artifactId>
 	<scope>test</scope>
 </dependency>
 ```
-
 We can also use [Spring Initializr](https://start.spring.io/) to quickly set up the project with needed dependencies.
 
 ## Setting Up the H2 Database
@@ -56,12 +57,12 @@ spring.h2.console.path=/h2-console
 ```
 
 ## The JPA Entity Class
-To quickly prototype our application’s domain layer, let’s define a simple JPA entity class, which will be responsible for modelling users:
+To quickly prototype our application’s domain layer, let’s define a simple JPA entity class, which will be responsible for modelling cake:
 
 ```
 @Entity
 @Table(name = "cake")
-public class   Cake {
+public class Cake {
 
 	@Id
 	@Column(name="id")
@@ -75,7 +76,7 @@ public class   Cake {
 ```
 
 ## The CakeRepository Interface
-To quickly prototype our application’s domain layer, we will use JDBCTemplate to help us execute sql statement.
+To quickly prototype our application’s domain layer, we will use spring feature, JDBCTemplate to help us execute sql statement.
 
 ```
 public interface CakeRepository{
@@ -92,7 +93,9 @@ The service layer is for implementing the business requirement of the applicatio
 public interface CakeRepository{
 	Cake create(Cake cake);
 	List<Cake> findAll();
+	
 	//some other methods
+	
 	}
 ```
 
@@ -103,7 +106,7 @@ Now let’s implement the REST API. In this case, it’s just a simple REST cont
 @RestController
 public class CakeController {
 
-    standard constructors
+    // standard constructors
     
 	private CakeService cakeService;
 
@@ -121,6 +124,7 @@ Finally, let’s test our API endpoint with RestTemplate:
 
 ```
 public class CakeTests {
+    
     @Test
     void testGetACake() {
         RestTemplate restTemplate = new RestTemplate();
@@ -135,6 +139,7 @@ public class CakeTests {
 ```
 
 ## Showing Some API endpoint testing result by Postman
+After running our application, We can also view our data with Postman tool
 
 Test the get all request:
 
@@ -152,7 +157,5 @@ Test the Post request:
 
 
 ## Conclusion
-In this article, I created a simple e-commerce application in the business tier and the backend database. The steps above demonstrates how to set up the configuration, make our data variable for displaying to the frontend.
-
-
+In this article, we learned how to build a basic web application with Spring Boot.
 
