@@ -1,12 +1,11 @@
 # Overview of My Bakery Web Application
 
 
-In this tutorial, I'll implement a simple e-commerce application. I'll develop an API using Spring Boot and test with Spring RestTemplate.
+In this tutorial, We will build a simple web application with Spring Boot . In this tutorial, we'll use Spring Boot for implementing a RESTful backend and test REST endpoint with RestTemplate.
 
-## Backend Part
+## The Spring Boot Application
 
-To develop the API, I use the latest version of Spring Boot. I also use JPA and the in memory database, H2 for the persistence side of things.
-
+Our demo web applications's functionality will be pretty simplistic indeed. It will narrowed to fetching and displaying a List of JPA entities from an in-memory H2 database.
 
 ### Maven Dependencies
 
@@ -14,27 +13,24 @@ Below are the required Dependencies for the pom.xml
 
 These are the Spring Boot dependencies:
 ```
+
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+
 <dependency>
   <groupId>org.springframework.boot</groupId>
   <artifactId>spring-boot-starter-data-jpa</artifactId>
 </dependency>
 
 <dependency>
-  <groupId>org.springframework.boot</groupId>
-  <artifactId>spring-boot-starter-web</artifactId>
-</dependency>
-```
-
-Then, the H2 database:
-
-```
-<dependency>
 	<groupId>com.h2database</groupId>
 	<artifactId>h2</artifactId>
 </dependency>
 ```
 
-And finally - the TestRestTemplate:
+And finally - the RestTemplate:
 
 ```
 <dependency>
@@ -57,6 +53,85 @@ spring.datasource.url=jdbc:h2:file:./data/spring6jdbc3
 spring.sql.init.mode=always
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
+```
+
+## The JPA Entity Class
+To quickly prototype our application’s domain layer, let’s define a simple JPA entity class, which will be responsible for modelling users:
+
+```
+@Entity
+@Table(name = "cake")
+public class   Cake {
+
+	@Id
+	@Column(name="id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+	@Column(name = "title")
+	private String title;
+	
+	//some other fields, standard constructors / setters / getters
+}	
+```
+
+## The CakeRepository Interface
+To quickly prototype our application’s domain layer, we will use JDBCTemplate to help us execute sql statement.
+
+```
+public interface CakeRepository{
+	Cake create(Cake cake);
+	List<Cake> findAll();
+	//some other methods
+	}
+```
+
+## The CakeService Interface
+The service layer is for implementing the business requirement of the application.
+
+```
+public interface CakeRepository{
+	Cake create(Cake cake);
+	List<Cake> findAll();
+	//some other methods
+	}
+```
+
+## The REST Controller
+Now let’s implement the REST API. In this case, it’s just a simple REST controller:
+
+```
+@RestController
+public class CakeController {
+
+    standard constructors
+    
+	private CakeService cakeService;
+
+	@PostMapping("/cake")
+	public Cake createCake(@RequestBody Cake cake){
+		return cakeService.create(cake);
+	}
+	
+	//Some other operation methods
+}
+```
+
+## The Junit test cases
+Finally, let’s test our API endpoint with RestTemplate:
+
+```
+public class CakeTests {
+    @Test
+    void testGetACake() {
+        RestTemplate restTemplate = new RestTemplate();
+
+        Cake cake= restTemplate.getForObject("http://localhost:8080/cake/{id}", Cake.class, 1);
+
+        System.out.println(cake.getTitle());
+    }
+	
+	//Some other Junit test cases
+}
 ```
 
 ## Showing Some API endpoint testing result by Postman

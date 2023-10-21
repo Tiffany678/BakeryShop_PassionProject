@@ -17,7 +17,35 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class CakeTests {
+    @Test
+    void testGetACake() {
+        RestTemplate restTemplate = new RestTemplate();
 
+        Cake cake= restTemplate.getForObject("http://localhost:8080/cake/{id}", Cake.class, 1);
+
+        System.out.println(cake.getTitle());
+    }
+
+    @Test
+    public void testGetAllCake(){
+        RestTemplate restTemplate= new RestTemplate();
+        ResponseEntity<List<Cake>> cakeResponse =restTemplate.exchange(
+                "http://localhost:8080/cake", HttpMethod.GET,
+                null, new ParameterizedTypeReference<List<Cake>>() {
+                });
+        assertTrue(cakeResponse.getBody()!=null, "Body is null");
+
+        List<Cake> cakes = cakeResponse.getBody();
+        for(Cake cake: cakes){
+            System.out.println("Id: "+cake.getId()
+                    +"\nName: "+cake.getTitle()
+                    +"\nprice: "+cake.getPrice()
+                    +"\nMaximum number to order: "+cake.getLimitedNum()
+                    +"\nInformation: "+cake.getInformation()
+                    +"\n");
+        }
+
+    }
     @Test
     public void testCreateCake(){
         RestTemplate restTemplate = new RestTemplate();
@@ -34,34 +62,6 @@ public class CakeTests {
                 +"\nMaximum number to order: "+cake.getLimitedNum()
                 +"\nInformation: "+cake.getInformation()
                 +"\n");
-    }
-    @Test
-    public void testGetAllCake(){
-        RestTemplate restTemplate= new RestTemplate();
-        ResponseEntity<List<Cake>> cakeResponse =restTemplate.exchange(
-                "http://localhost:8080/cake", HttpMethod.GET,
-                null, new ParameterizedTypeReference<List<Cake>>() {
-                    });
-        assertTrue(cakeResponse.getBody()!=null, "Body is null");
-
-        List<Cake> cakes = cakeResponse.getBody();
-        for(Cake cake: cakes){
-            System.out.println("Id: "+cake.getId()
-                    +"\nName: "+cake.getTitle()
-                    +"\nprice: "+cake.getPrice()
-                    +"\nMaximum number to order: "+cake.getLimitedNum()
-                    +"\nInformation: "+cake.getInformation()
-                    +"\n");
-        }
-
-    }
-    @Test
-    void testGetACake() {
-        RestTemplate restTemplate = new RestTemplate();
-
-        Cake cake= restTemplate.getForObject("http://localhost:8080/cake/{id}", Cake.class, 1);
-
-        System.out.println(cake.getTitle());
     }
     @Test
     public void testUpdateCake(){
