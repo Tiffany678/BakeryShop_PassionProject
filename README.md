@@ -1,9 +1,7 @@
 # Overview of My Bakery Web Application
 
 
-In this tutorial, I'll implement a simple e-commerce application. I'll develop an API using Spring Boot and a client application that will consume the API using React.
-
-Basically, the user will be able to add/remove products from a shopping cart/ favorite page, increasing/ decreasing item counts and to place an order.
+In this tutorial, I'll implement a simple e-commerce application. I'll develop an API using Spring Boot and test with Spring RestTemplate.
 
 ## Backend Part
 
@@ -36,13 +34,13 @@ Then, the H2 database:
 </dependency>
 ```
 
-And finally - the Jackson library:
+And finally - the TestRestTemplate:
 
 ```
 <dependency>
-    <groupId>com.fasterxml.jackson.datatype</groupId>
-    <artifactId>jackson-datatype-jsr310</artifactId>
-    <version>2.9.6</version>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-test</artifactId>
+	<scope>test</scope>
 </dependency>
 ```
 
@@ -61,7 +59,7 @@ spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
 ```
 
-## API endpoint testing by Postman
+## Showing Some API endpoint testing result by Postman
 
 Test the get all request:
 
