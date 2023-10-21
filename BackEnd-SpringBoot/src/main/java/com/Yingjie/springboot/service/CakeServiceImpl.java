@@ -24,8 +24,8 @@ public class CakeServiceImpl implements CakeService{
     }
 
     @Override
-    public Cake getCake(int id) {
-        return cakeRepository.getCake(id);
+    public Cake getCakeById(int id) {
+        return cakeRepository.getCakeById(id);
     }
 
     @Override
@@ -33,18 +33,9 @@ public class CakeServiceImpl implements CakeService{
         return cakeRepository.update(cake);
     }
 
-    @Override
-    public void update(List<Object[]> pairs) {
-
-    }
-
-    @Override
-    public void batch() {
-
-    }
 
     @Override
     public void delete(int id) {
-
+         cakeRepository.delete(id);
     }
 }
