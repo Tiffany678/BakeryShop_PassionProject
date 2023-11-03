@@ -141,11 +141,8 @@ After running our application, We can also view our data with Postman tool
 
 Test the get all request:
 
-<img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/PostmanGet.png" alt="Get request" width="650"/>
+<img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/Postman_Get.png" alt="Get request" width="650"/>
 
-Test the Post request:
-
-<img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/PostmanPostMethod.png" alt="Get request" width="650"/>
 
 ## 3. The Angular Application
 After our Spring Boot application up and running, we are ready to retrieve data from backend.
