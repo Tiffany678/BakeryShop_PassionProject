@@ -11,15 +11,15 @@
 --     (9, 'Chocolate Cake', 20, 5, false, 'Chocolate', 'Chocolate Cake'),
 --     (10, 'Strawberry Cheese Cake', 30, 5, false, 'Strawberry',  'Strawberry Cheese Cake');
 
-Insert into cake(title, price, limitedNum, information)
+Insert into cake(title, price, limitedNum, information, imageUrl)
 VALUES
-    ( 'Fruit Cake', 40, 5, 'Fruit Cake'),
-    ('Classic Cheese Cake', 40, 5, 'Classic Cheese Cake'),
-    ('Chocolate Cocoa Mousse', 30, 5,  'Chocolate Cocoa Mousse'),
-    ('Green Tea Mousse Cake', 30, 5, 'Green Tea Mousse Cake'),
-    ('Strawberry Mousse Cake', 30, 5, 'Strawberry Mousse Cake'),
-    ('Rich Chocolate Cheese Mousse Cake', 30, 5, 'Rich Chocolate Cheese Mousse Cake'),
-    ('Square Green Tea Cake', 50, 5, 'Square Green Tea Cake'),
-    ('Matcha Cream Cake', 40, 5, 'Matcha Cream Cake'),
-    ('Chocolate Cake', 20, 5, 'Chocolate Cake'),
-    ('Strawberry Cheese Cake', 30, 5,  'Strawberry Cheese Cake');
+    ( 'Fruit Cake', 40, 5, 'Fruit Cake', 'assets/images/FruitCake.png'),
+    ('Classic Cheese Cake', 40, 5, 'Classic Cheese Cake','assets/images/CheeseCake.png'),
+    ('Chocolate Cocoa Mousse', 30, 5,  'Chocolate Cocoa Mousse','assets/images/ChocolateMousse.png');
+--     ('Green Tea Mousse Cake', 30, 5, 'Green Tea Mousse Cake','assets/images/CheeseCake.png'),
+--     ('Strawberry Mousse Cake', 30, 5, 'Strawberry Mousse Cake','assets/images/CheeseCake.png'),
+--     ('Rich Chocolate Cheese Mousse Cake', 30, 5, 'Rich Chocolate Cheese Mousse Cake','assets/images/CheeseCake.png'),
+--     ('Square Green Tea Cake', 50, 5, 'Square Green Tea Cake','assets/images/CheeseCake.png'),
+--     ('Matcha Cream Cake', 40, 5, 'Matcha Cream Cake','assets/images/CheeseCake.png'),
+--     ('Chocolate Cake', 20, 5, 'Chocolate Cake','assets/images/CheeseCake.png'),
+--     ('Strawberry Cheese Cake', 30, 5,  'Strawberry Cheese Cake','assets/images/CheeseCake.png');

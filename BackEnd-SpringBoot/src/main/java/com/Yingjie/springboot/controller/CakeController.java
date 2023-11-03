@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class CakeController {
 
@@ -46,6 +46,7 @@ public class CakeController {
 				+"\nprice: "+cake.getPrice()
 				+"\nMaximum number to order: "+cake.getLimitedNum()
 				+"\nInformation: "+cake.getInformation()
+				+"\nImageUrl"+cake.getImageUrl()
 				+"\n");
 		return cakeService.update(cake);
 	}

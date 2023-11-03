@@ -19,17 +19,20 @@ public class   Cake {
 		@Column(name = "information")
 		private String information;
 
+		@Column(name = "imageUrl")
+		private String imageUrl;
 
 	public Cake() {
 
 	}
 
-	public Cake(int id, String title, double price, int limitedNum, String information) {
+	public Cake(int id, String title, double price, int limitedNum, String information, String imageUrl) {
 		this.id =id;
 		this.title = title;
 		this.price = price;
 		this.limitedNum = limitedNum;
 		this.information = information;
+		this.imageUrl = imageUrl;
 	}
 
 	public long getId() {
@@ -72,5 +75,8 @@ public class   Cake {
 	public void setInformation(String information) {
 		this.information = information;
 	}
+	public String getImageUrl() {return imageUrl;}
+
+	public void setImageUrl(String imageUrl) {this.imageUrl = imageUrl;}
 }
 
