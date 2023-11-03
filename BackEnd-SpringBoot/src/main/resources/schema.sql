@@ -11,6 +11,7 @@ Create Table IF NOT EXISTS cake(
                        Price double,
                        limitedNum int,
                        information varchar(255),
+                       imageUrl varchar(255),
                        PRIMARY	KEY (id)
 );
 
