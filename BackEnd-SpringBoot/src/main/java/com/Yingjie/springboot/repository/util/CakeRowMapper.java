@@ -18,8 +18,9 @@ public class CakeRowMapper implements RowMapper<Cake> {
         cake.setTitle(rs.getString("title"));
         cake.setPrice(rs.getDouble("price"));
         cake.setInformation(rs.getString("information"));
-        cake.setLimitedNum(rs.getInt("limitedNum"));
+        cake.setInventory(rs.getInt("inventory"));
         cake.setImageUrl(rs.getString("imageUrl"));
+        cake.setCategory(rs.getString("category"));
         return cake;
     }
 }

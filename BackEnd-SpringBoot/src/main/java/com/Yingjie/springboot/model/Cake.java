@@ -14,25 +14,38 @@ public class   Cake {
 		private String title;
 		@Column(name = "price")
 		private double price;
-		@Column(name = "limitedNum")
-		private int limitedNum;
+		@Column(name = "inventory")
+		private int inventory;
 		@Column(name = "information")
 		private String information;
 
 		@Column(name = "imageUrl")
 		private String imageUrl;
 
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	@Column(name ="category")
+		private String category;
+
+
 	public Cake() {
 
 	}
 
-	public Cake(int id, String title, double price, int limitedNum, String information, String imageUrl) {
+	public Cake(int id, String title, double price, int inventory, String information, String imageUrl, String category) {
 		this.id =id;
 		this.title = title;
 		this.price = price;
-		this.limitedNum = limitedNum;
+		this.inventory = inventory;
 		this.information = information;
 		this.imageUrl = imageUrl;
+		this.category = category;
 	}
 
 	public long getId() {
@@ -59,12 +72,12 @@ public class   Cake {
 		this.price = price;
 	}
 
-	public int getLimitedNum() {
-		return limitedNum;
+	public int getInventory() {
+		return inventory;
 	}
 
-	public void setLimitedNum(int count) {
-		this.limitedNum = count;
+	public void setInventory(int inventory) {
+		this.inventory = inventory;
 	}
 
 

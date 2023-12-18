@@ -1,0 +1,14 @@
+<div class="product" >
+    <div class="product-details">
+      <img [src]="getImageUrl(product)" [alt]="product.title" />
+      <div class="product-info">
+        <div class="name red">{{ product.title }}</div>
+        <div class="description">{{ product.information }}</div>
+        <!-- <div class="category">Part Type: </div> -->
+      </div>
+    </div>
+    <div class="price">
+      <div>{{ product.price | currency:'USD' }}</div>
+      <button class="cta" (click)="buyButtonClicked(product)">Buy</button>
+    </div>
+  </div>

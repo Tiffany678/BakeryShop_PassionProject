@@ -15,6 +15,7 @@ import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
+@RequestMapping("/api")
 public class CakeController {
 
 	private CakeService cakeService;
@@ -23,17 +24,20 @@ public class CakeController {
 		this.cakeService = cakeService;
 	}
 	@PostMapping("/cake")
+
 	public Cake createCake(@RequestBody Cake cake){
 		return cakeService.create(cake);
 	}
 
 	@GetMapping("/cake")
+
 	public List<Cake> getCakes()
 	{
 		return cakeService.findAll();
 	}
 
 	@GetMapping("/cake/{id}")
+
 	public Cake getCakeById(@PathVariable(value = "id") int id) {
 
 		return cakeService.getCakeById(id);
@@ -44,9 +48,10 @@ public class CakeController {
 		System.out.println("Id: "+cake.getId()
 				+"\nName: "+cake.getTitle()
 				+"\nprice: "+cake.getPrice()
-				+"\nMaximum number to order: "+cake.getLimitedNum()
+				+"\nMaximum number to order: "+cake.getInventory()
 				+"\nInformation: "+cake.getInformation()
 				+"\nImageUrl"+cake.getImageUrl()
+				+"\ncategory"+cake.getCategory()
 				+"\n");
 		return cakeService.update(cake);
 	}

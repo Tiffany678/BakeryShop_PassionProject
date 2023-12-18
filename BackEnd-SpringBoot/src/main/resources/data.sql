@@ -11,15 +11,13 @@
 --     (9, 'Chocolate Cake', 20, 5, false, 'Chocolate', 'Chocolate Cake'),
 --     (10, 'Strawberry Cheese Cake', 30, 5, false, 'Strawberry',  'Strawberry Cheese Cake');
 
-Insert into cake(title, price, limitedNum, information, imageUrl)
+Insert into cake(id,title, price, inventory, information, imageUrl, category)
 VALUES
-    ( 'Fruit Cake', 40, 5, 'Fruit Cake', 'assets/images/FruitCake.png'),
-    ('Classic Cheese Cake', 40, 5, 'Classic Cheese Cake','assets/images/CheeseCake.png'),
-    ('Chocolate Cocoa Mousse', 30, 5,  'Chocolate Cocoa Mousse','assets/images/ChocolateMousse.png');
---     ('Green Tea Mousse Cake', 30, 5, 'Green Tea Mousse Cake','assets/images/CheeseCake.png'),
---     ('Strawberry Mousse Cake', 30, 5, 'Strawberry Mousse Cake','assets/images/CheeseCake.png'),
---     ('Rich Chocolate Cheese Mousse Cake', 30, 5, 'Rich Chocolate Cheese Mousse Cake','assets/images/CheeseCake.png'),
---     ('Square Green Tea Cake', 50, 5, 'Square Green Tea Cake','assets/images/CheeseCake.png'),
---     ('Matcha Cream Cake', 40, 5, 'Matcha Cream Cake','assets/images/CheeseCake.png'),
---     ('Chocolate Cake', 20, 5, 'Chocolate Cake','assets/images/CheeseCake.png'),
---     ('Strawberry Cheese Cake', 30, 5,  'Strawberry Cheese Cake','assets/images/CheeseCake.png');
+    (1, 'Dinosaur Cake', 40, 5, 'This cake is a delightful blend of chocolate and caramel, perfect for young adventurers with a sweet tooth.', 'boy_dinosaur.JPG','boys'),
+    (2, 'Lego Cake', 40, 5, 'A cake adorned with vibrant colors and fun decorations, guaranteed to make any young boy''s birthday extra special.','boy_Lego.JPG','boys'),
+    (3, 'Pikachu Cake', 30, 5,  'Celebrate her grace and sophistication with a cake that exudes beauty and flavor, a true embodiment of femininity.','boy_pikachu.JPG', 'boys'),
+    (4, 'Lisa Cake', 30, 5, 'Indulge in the whimsical world of flavors with this enchanting cake, featuring layers of strawberry and vanilla, and adorned with delicate floral designs.','girl_Lisa.JPG', 'girls'),
+    (5, 'Moon Cake', 30, 5, 'This cake is a sweet symphony of pink and purple, tailor-made for the princess in your life.','girl_moon.JPG', 'girls'),
+    (6, 'Wing Cake', 30, 5, 'Treat the special woman in your life to a cake that''s as elegant as she is – layers of rich red velvet, dressed in a luxurious cream cheese frosting.','her_wing.JPG', 'women'),
+    (7, 'Chip Cake', 50, 5, 'This cake is a bold and hearty choice, with layers of espresso-infused chocolate and a whiskey-infused ganache, perfect for the discerning gentleman.','him_chip.JPG', 'men'),
+    (8, 'Rolex Cake', 40, 5, 'Indulge in the robust flavors of this cake, designed to satisfy the palate of any man with a taste for the finer things in life.','him_Rolex.JPG', 'men');

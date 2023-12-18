@@ -40,7 +40,7 @@ public class CakeTests {
             System.out.println("Id: "+cake.getId()
                     +"\nName: "+cake.getTitle()
                     +"\nprice: "+cake.getPrice()
-                    +"\nMaximum number to order: "+cake.getLimitedNum()
+                    +"\nMaximum number to order: "+cake.getInventory()
                     +"\nInformation: "+cake.getInformation()
                     +"\n");
         }
@@ -52,14 +52,14 @@ public class CakeTests {
         Cake cake= new Cake();
         cake.setTitle("Create a Strawberry Cake");
         cake.setPrice(30.90);
-        cake.setLimitedNum(5);
+        cake.setInventory(5);
         cake.setInformation("This is the information about this cake");
 
         restTemplate.postForObject("http://localhost:8080/cake",cake, Cake.class);
         System.out.println("Id: "+cake.getId()
                 +"\nName: "+cake.getTitle()
                 +"\nprice: "+cake.getPrice()
-                +"\nMaximum number to order: "+cake.getLimitedNum()
+                +"\nMaximum number to order: "+cake.getInventory()
                 +"\nInformation: "+cake.getInformation()
                 +"\n");
     }
@@ -76,7 +76,7 @@ public class CakeTests {
         System.out.println("Id: "+cake.getId()
                 +"\nName: "+cake.getTitle()
                 +"\nprice: "+cake.getPrice()
-                +"\nMaximum number to order: "+cake.getLimitedNum()
+                +"\nMaximum number to order: "+cake.getInventory()
                 +"\nInformation: "+cake.getInformation()
                 +"\n");
     }

@@ -2,30 +2,30 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { ProductListComponet } from './products/product-list.components';
 import { HttpClientModule } from '@angular/common/http';
-import { ProductDetailComponent } from './products/product-detail.component';
-import { WelcomeComponent } from './home/welcome.component';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { CatalogComponent } from './catalog/catalog.component';
+import { SiteHeaderComponent } from './site-header/site-header.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
-    ProductListComponet,
-    ProductDetailComponent
+    HomeComponent,
+    CatalogComponent,
+    SiteHeaderComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot([
-      {path:'products', component: ProductListComponet },
-      {path:'products/:id', component: ProductDetailComponent },
-      {path:'welcome', component: WelcomeComponent },
-      {path:'', redirectTo: 'welcome', pathMatch: 'full' },
-      {path:'**', redirectTo: 'welcome', pathMatch: 'full' }
-    ])
+    // RouterModule.forRoot([
+    //   {path:'', redirectTo: 'welcome', pathMatch: 'full' },
+    //   {path:'**', redirectTo: 'welcome', pathMatch: 'full' }
+    // ])
   ],
   bootstrap: [AppComponent]
 })

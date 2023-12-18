@@ -35,9 +35,10 @@ public class CakeRepositoryImpl implements CakeRepository {
         data.put("id",cake.getId());
         data.put("title", cake.getTitle());
         data.put("price", cake.getPrice());
-        data.put("limitedNum", cake.getLimitedNum());
+        data.put("limitedNum", cake.getInventory());
         data.put("information", cake.getInformation());
         data.put("imageUrl", cake.getImageUrl());
+        data.put("category", cake.getCategory());
         insert.setGeneratedKeyName("id");
 
         Number id = insert.executeAndReturnKey(data);
@@ -67,13 +68,15 @@ public class CakeRepositoryImpl implements CakeRepository {
                 "limitedNum=?, "+
                 "information=? "+
                 "imageUrl=? "+
+                "category=? "+
                 "WHERE id=? ";
         jdbcTemplate.update(sql,
                 cake.getTitle(),
                 cake.getPrice(),
-                cake.getLimitedNum(),
+                cake.getInventory(),
                 cake.getInformation(),
                 cake.getImageUrl(),
+                cake.getCategory(),
                 cake.getId());
 
         return cake;

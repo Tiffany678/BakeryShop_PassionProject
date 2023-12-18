@@ -659,3 +659,258 @@ select * from cake [42102-214]
 2023-11-03 15:50:44 jdbc[53]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
 select * from cake [42102-214]
+2023-11-09 15:57:10 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 15:57:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 15:58:45 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:06:35 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:06:36 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:06:42 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:06:44 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:06:46 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:07:04 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:07:07 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:07:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:07:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:07:20 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:07:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:07:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:07:35 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:07:53 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:08:09 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:09:31 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:10:03 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:10:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:10:36 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:10:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:10:41 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:10:52 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:10:54 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-11-09 16:10:57 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:41:39 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:41:44 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:41:45 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:41:46 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:41:46 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:41:46 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:42:05 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:42:09 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:42:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:42:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:42:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:43:44 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:44:12 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:44:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:44:19 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:45:25 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:56:23 jdbc[22]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:56:37 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:56:58 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:57:15 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake where id=? [42102-214]
+2023-12-14 17:57:25 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake where id=? [42102-214]
+2023-12-14 17:57:53 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake where id=? [42102-214]
+2023-12-14 17:59:05 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:59:36 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:59:37 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:59:37 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-14 17:59:44 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake where id=? [42102-214]
+2023-12-16 22:20:30 jdbc[203]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-16 22:20:32 jdbc[203]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:50:10 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:50:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:50:40 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:51:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:51:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:51:37 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:51:37 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:51:50 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:51:50 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:54:37 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:54:37 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:54:39 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:54:39 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:57:44 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:57:45 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 00:57:46 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:03 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:04 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:05 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:07 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:53 jdbc[39]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:54 jdbc[39]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:54 jdbc[39]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:54 jdbc[39]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:55 jdbc[39]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:55 jdbc[39]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:56 jdbc[39]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:36:56 jdbc[39]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
+2023-12-17 22:37:42 jdbc[43]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAKE" not found; SQL statement:
+select * from cake [42102-214]
