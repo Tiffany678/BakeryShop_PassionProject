@@ -8,7 +8,7 @@ import { Observable, catchError, tap, throwError } from 'rxjs';
 })
 export class ProductService {
   private productUrl ='http://localhost:8080/api/cake';
-
+//  private productUrl ='/api/products';
   constructor(private http: HttpClient) { }
 
   // getProducts(): Observable<IProduct[]>{

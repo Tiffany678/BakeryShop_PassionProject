@@ -147,7 +147,7 @@ Test the get all request:
 ## 3. The Angular Application
 After our Spring Boot application up and running, we are ready to retrieve data from backend.
 
-<img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/Frontend_productList.png" alt="Angular product list" width="650"/>
+<img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/Frontend_productList1.png" alt="Angular product list" width="650"/>
 
 ## Conclusion
 In this article, we learned how to build a basic web application with Spring Boot and Angular.
