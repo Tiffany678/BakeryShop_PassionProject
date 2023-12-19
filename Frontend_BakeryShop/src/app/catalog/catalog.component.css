@@ -25,3 +25,8 @@
 .product-item {
   border-bottom: 2px solid #999;
 }
+
+a.active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #d25ca1;
+}

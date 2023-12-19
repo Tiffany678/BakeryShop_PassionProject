@@ -6,7 +6,6 @@
       <div class="promo-text">
         <div class="promo-main-text">Experience the joy of the holiday season with this year’s limited-edition Festive Delights Advent</div>
         <div class="promo-sub-text cta">
-          <div>Sign Up Today and Get 20% Site Wile On Our Friendliest</div>
           <div>Enjoy complimentary gift wrap </div>
         </div>
       </div>
@@ -15,25 +14,25 @@
   
     <ul class="robot-parts-cta">
       <li>
-        <a class="part">
+        <a routerLink="/catalog" [queryParams]="{filter: 'boys'}" class="part">
           <img src="/assets/images/cake/boy_dinosaur.JPG" alt="Boy Dinosaur" />
           <div>Boys</div>
         </a>
       </li>
       <li>
-        <a class="part">
+        <a routerLink="/catalog" [queryParams]="{filter: 'girls'}" class="part">
           <img src="/assets/images/cake/girl_Lisa.JPG" alt="Girl Lisa" />
           <div>Girls</div>
         </a>
       </li>
       <li>
-        <a class="part">
+        <a routerLink="/catalog" [queryParams]="{filter: 'women'}" class="part">
           <img src="/assets/images/cake/her_wing.JPG" alt="Angel Wing" />
           <div>For Hers</div>
         </a>
       </li>
       <li>
-        <a class="part">
+        <a routerLink="/catalog" [queryParams]="{filter: 'men'}" class="part">
           <img src="/assets/images/cake/him_Rolex.JPG" alt="Rolex" />
           <div>For Him</div>
         </a>

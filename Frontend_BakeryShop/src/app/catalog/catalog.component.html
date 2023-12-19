@@ -1,14 +1,14 @@
 <div class="container">
     <div class="filters">
-      <a class="button" (click)="filter=''">All</a>
-      <a class="button" (click)="filter='girls'">Girls</a>
-      <a class="button" (click)="filter='boys'">Boys</a>
-      <a class="button" (click)="filter='women'">For Her</a>
-      <a class="button" (click)="filter='men'">For Him</a>
+      <a routerLink="/catalog" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}" class="button">All</a>
+      <a routerLink="/catalog" [queryParams]="{filter: 'girls'}" routerLinkActive="active" class="button">Girls</a>
+      <a routerLink="/catalog" [queryParams]="{filter: 'boys'}"  routerLinkActive="active" class="button">Boys</a>
+      <a routerLink="/catalog" [queryParams]="{filter: 'women'}" routerLinkActive="active" class="button">For Her</a>
+      <a routerLink="/catalog" [queryParams]="{filter: 'men'}"   routerLinkActive="active" class="button">For Him</a>
     </div>
   
     <ul class="products"  >
-      <li class="product-item" *ngFor="let product of getFilterProduct()">
+      <li class="product-item" *ngFor="let product of getFilteredProducts()">
         <tiff-product-details [product]="product" (buy)="addToCart(product)" ></tiff-product-details>
       </li>
     </ul>

@@ -141,13 +141,77 @@ After running our application, We can also view our data with Postman tool
 
 Test the get all request:
 
-<img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/Postman_GetCake.png" alt="Get request" width="650"/>
+<img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/Postman_getCake.png" alt="Get request" width="650"/>
 
 
 ## 3. The Angular Application
-After our Spring Boot application up and running, we are ready to retrieve data from backend.
+After our Spring Boot application up and running, we are ready to retrieve data from backend and render to the user interface.
 
-<img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/Frontend_productList1.png" alt="Angular product list" width="650"/>
+### 3.1. Project Scaffolding With Angular CLI
+We can generate our Angular application structure from the ground up. We’ll let Angular CLI do the hard work for us. So we can open a command console, then navigate to the folder where we want our application to be created, and type the command:
+
+```
+    ng general component catalog
+```
+### 3.2. The catalog.component.ts Component
+To better understand how Angular binds an HTML template to a component, let’s go to the src/app directory and edit the catalog.component.ts TypeScript file, the catalog component:
+
+```
+    @Component({
+      selector: 'tiff-catalog',
+      templateUrl: './catalog.component.html',
+      styleUrls: ['./catalog.component.css']
+    })
+    export class CatalogComponent {
+      products: IProduct[]= [];
+      errorMessage: string ='';
+      filter: string ='';
+    
+      ngOnInit() {
+        this.productSvc.getProducts().subscribe({
+          next: products => this.products = products,
+          error: err => this.errorMessage = err
+        });
+        this.route.queryParams.subscribe((params) => {
+          this.filter = params['filter'] ?? '';
+        })
+      }
+      //Some other methods and a constructor
+```
+
+### 3.3. The product.Service Service
+With our client-side domain cake class already set, we can now implement a service class that performs GET and POST requests to the http://localhost:8080/cake endpoint.
+
+```
+    @Injectable({
+      providedIn: 'root'
+    })
+    export class ProductService {
+      private productUrl ='http://localhost:8080/api/cake';
+
+      constructor(private http: HttpClient) { }
+ 
+      getProducts(): Observable<IProduct[]> {
+        return this.http.get<IProduct[]>(this.productUrl).pipe(
+          tap(data => console.log('All', JSON.stringify(data))),
+          catchError(this.handleError)
+        );
+      }
+      //some methods here
+```
+4. Running the Application
+   Finally, we’re ready to run our application.
+To accomplish this, we’ll first run the Spring Boot application, so the REST service is alive and listening for requests.
+Once the Spring Boot application has been started, we’ll open a command console and type the following command:
+
+```
+    npm start
+```
+<img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/Frontend_home.png" alt="home page" width="650"/>
+
+<img height="500" src="https://github.com/Tiffany678/BakeryShop_PassionProject/blob/main/Images/Frontend_ProductList1.png" alt="Angular product list" width="650"/>
+
+
 
 ## Conclusion
 In this article, we learned how to build a basic web application with Spring Boot and Angular.
